@@ -1,0 +1,948 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    background-color: #ffffff;
+    font-weight: 700;
+    width: 100%;
+    height: 13vh;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar h1 {
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+.navbar h1 span {
+    background-color: #FFBD59;
+    padding: 1px 4px 1px 4px;
+    margin-right: 3px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 70px;
+    font-size: 22px;
+    transform: scale(100%);
+    transition: all ease-in-out 0.3s;
+    opacity: 1;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar .navbar-list {
+    display: none;
+    color: #000000;
+    font-size: 35px;
+}
+
+/* hovering */
+.navbar ul li:hover {
+    transform: scale(90%);
+    opacity: 0.7;
+}
+/* navbar end */
+
+/* Home */
+.home {
+    transform: translateY(17%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.home .home-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home .home-section .home-text {
+    background-color: #212120;
+    width: 450px;
+    height: 485px;
+    text-align: center;
+}
+
+.home .home-section .home-text h1 {
+    font-size: 35px;
+    padding: 30px 0 0 50px;
+    text-align: left;
+}
+
+.home .home-section .home-text .home-line {
+    background-color: #ffffff;
+    height: 2px;
+    width: 450px;
+    margin: 35px 0 35px 0;
+}
+
+.home .home-section .home-text p {
+    padding-left: 50px;
+    font-weight: 400;
+    text-align: left;
+    font-size: 18px;
+}
+
+.home .home-section .home-text button {
+    margin-top: 70px;
+    padding: 8px 35px 8px 35px;
+    background-color: #FFBD59;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    transform: scale(100%);
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+
+.home .home-section .home-text button a {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.home .home-section .home-img img {
+    width: 860px;
+    height: 480px;
+}
+
+/* hovering */
+.home .home-section .home-text button:hover {
+    transform: scale(90%);
+    opacity: 0.7;
+}
+
+/* home flex */
+.home-flex {
+    position: relative;
+    z-index: 9;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.home-flex .home-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-flex .home-cards .home-card {
+    background-color: #ffffff;
+    width: 320px;
+    height: 155px;
+    border-radius: 10px;
+    box-shadow: 0px -9px 19px -3px rgba(0,0,0,0.36) inset;
+    -webkit-box-shadow: 0px -9px 19px -3px rgba(0,0,0,0.36) inset;
+    -moz-box-shadow: 0px -9px 19px -3px rgba(0,0,0,0.36) inset;
+    margin: 0px 50px 0px 50px;
+}
+
+.home-cards .home-card h1 {
+    padding: 15px 0 15px 35px;
+    color: #38B6FF;
+}
+
+.home-flex .home-cards .home-card p {
+    padding-left: 35px;
+    font-size: 14px;
+}
+/* home flex emd */
+/* home end */
+
+/* Design */
+.desain {
+    font-family: "Open Sans", sans-serif;
+}
+
+.desain h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.desain .desain-cards {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    height: 80vh;
+    padding: 30px 10px 0 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: center;
+}
+
+.desain .desain-cards::-webkit-scrollbar {
+    width: 0;
+}
+
+.desain .desain-cards .desain-card-content .desain-card {
+    background-color: #ffffff;
+    width: 160px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px 30px 10px 30px;
+    cursor: pointer;
+    transform: scale(100%);
+    transition: all ease-in-out 0.3s;
+    opacity: 1;
+}
+
+.desain .desain-cards .desain-card-content .desain-card img {
+    width: 140px;
+    height: 140px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.desain .desain-cards .desain-card-content .desain-card .desain-card-star img {
+    width: 135px;
+    height: 25px;
+}
+
+.desain .desain-cards .desain-card-content .desain-card h1 {
+    color: #000000;
+    font-size: 21px;
+    margin-top: 0px;
+}
+
+.desain .desain-cards .desain-card-content .desain-card p {
+    color: #000000;
+    font-size: 13px;
+    text-align: left;
+    margin-top: -10px;
+}
+
+.desain .desain-cards .desain-card-content .desain-card .desain-price p {
+    color: #FF3131;
+    margin-top: 80px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* hovering card */
+.desain .desain-cards .desain-card-content .desain-card:hover {
+    transform: scale(90%);
+    opacity: 0.7;
+}
+
+/* arrow */
+.desain .desain-cards .desain-card-content .desain-card-arrow i {
+    font-size: 80px;
+    background-color: #FFBD59;
+    border-radius: 50px;
+    margin: 0 30px 0 30px;
+    rotate: 0deg;
+    transform: scale(100%);
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+/* hovering arrow */
+.desain .desain-cards .desain-card-content .desain-card-arrow i:hover {
+    rotate: 330deg;
+    transform: scale(90%);
+    opacity: 0.7;
+}
+/* Design end */
+
+/* Handphone mockup */
+.handphone {
+    color: #ffffff;
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.handphone .handphone-mockup {
+    padding-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.handphone .handphone-mockup .handphone-text {
+    padding-left: 40px;
+}
+
+.handphone .handphone-mockup .handphone-text h2 {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.handphone .handphone-mockup .handphone-text p {
+    font-size: 26px;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+
+.handphone .handphone-mockup .handphone-text button {
+    list-style: none;
+    padding: 5px 25px 5px 25px;
+    background-color: #BDFC57;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: all ease-in-out 0.3s;
+}
+
+.handphone .handphone-mockup .handphone-text button a {
+    text-decoration: none;
+    color: #212120;
+    font-weight: 750;
+}
+
+.handphone .handphone-mockup .handphone-img img {
+    width: 600px;
+    height: 650px;
+    margin: -90px 0 0 60px;
+    animation: bounce infinite 10s;
+}
+
+/* handphone keyframe */
+@keyframes bounce {
+    0% {
+        transform: translateY(3%);
+    }
+    25% {
+        transform: translateY(-3%);
+    }
+    50% {
+        transform: translateY(3%);
+    }
+    75% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(3%);
+    }
+}
+
+/* handphone hovering */
+.handphone .handphone-mockup .handphone-text button:hover {
+    transform: scale(90%);
+    opacity: 0.7;
+}
+
+/* footer handphone */
+.handphone-footer {
+    background-color: #545454;
+    width: 100%;
+    height: 17vh;
+    margin-top: -100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.handphone-footer img {
+    width: 100px;
+    height: 55px;
+}
+
+.handphone-footer p {
+    font-weight: 700;
+    margin-left: -20px;
+    margin-right: 60px;
+}
+/* footer handphone end */
+/* handphone mockup end */
+
+/* Our Vision */
+.vision {
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.vision .vision-content {
+    background-color: #E6EBED;
+    width: 900px;
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.vision .vision-content .vision-text {
+    padding-left: 50px;
+}
+
+.vision .vision-content .vision-text h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.vision .vision-content .vision-text p {
+    padding-top: 15px;
+    font-size: 17px;
+}
+
+.vision .vision-content .vision-text button {
+    list-style: none;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    padding: 5px 20px 5px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: scale(100%);
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+
+.vision .vision-content .vision-text button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.vision .vision-content .vision-img img {
+    width: 400px;
+    height: 400px;
+    transform: translateX(-80%) translateY(-50%);
+    position: absolute;
+}
+
+/* vision hovering */
+.vision .vision-content .vision-text button:hover {
+    transform: scale(90%);
+    opacity: 0.7;
+}
+
+/* Our Vision end */
+
+/* Our mission */
+.mission h1 {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.mission .mission-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mission .mission-cards .mission-card {
+    margin: 30px;
+}
+
+.mission .mission-cards .mission-card .mission-card-content {
+    background-color: #ffffff;
+    width: 500px;
+    height: 200px;
+    border: 4px solid #000000;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.mission .mission-cards .mission-card .mission-card-content .mission-card-content-text h1 {
+    text-align: left;
+    font-size: 23px;
+    padding: 0 0 0 5px;
+    margin: 30px 0 0 15px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #BDFC57;
+    width: 190px;
+}
+
+.mission .mission-cards .mission-card .mission-card-content .mission-card-content-text h2 {
+    text-align: left;
+    font-size: 23px;
+    padding: 0 0 0 5px;
+    margin-left: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-family: 20px;
+    background-color: #BDFC57;
+    width: 120px;
+}
+
+.mission .mission-cards .mission-card .mission-card-content .mission-card-content-moreinfo {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 0 15px;
+}
+
+.mission .mission-cards .mission-card .mission-card-content .mission-card-content-moreinfo i {
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 50px;
+    rotate: 340deg;
+    transition: all ease-in-out 0.3s;
+}
+
+.mission .mission-cards .mission-card .mission-card-content .mission-card-content-moreinfo p {
+    font-weight: 700;
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.mission .mission-cards .mission-card .mission-card-content .mission-card-content-moreinfo img {
+    width: 260px;
+    height: 150px;
+    margin-top: -88px;
+    margin-left: 120px;
+    transition: all ease-in-out 0.3s;
+    transform: translateX(0%);
+}
+/* Version 2 */
+.mission .mission-cards .mission-card .mission-card-content1 {
+    background-color: #000000;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    border: 4px solid #000000;
+}
+
+.mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-text h1 {
+    text-align: left;
+    font-size: 23px;
+    padding: 0 0 0 5px;
+    margin: 30px 0 0 15px;
+    font-family: "Montserrat", sans-serif;
+    font-family: 20px;
+    background-color: #ffffff;
+    width: 210px;
+}
+
+.mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-text h2 {
+    text-align: left;
+    font-size: 23px;
+    padding: 0 0 0 5px;
+    margin-left: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-family: 20px;
+    background-color: #ffffff;
+    width: 120px;
+}
+
+.mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-text h3 {
+    text-align: left;
+    font-size: 23px;
+    padding: 0 0 0 5px;
+    margin-left: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-family: 20px;
+    background-color: #ffffff;
+    width: 160px;
+}
+
+.mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-moreinfo {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 0 15px;
+}
+
+.mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-moreinfo i {
+    font-size: 30px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 50px;
+    rotate: 340deg;
+    transition: all ease-in-out 0.3s;
+}
+
+.mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-moreinfo p {
+    font-weight: 700;
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-moreinfo img {
+    width: 260px;
+    height: 150px;
+    margin-top: -88px;
+    margin-left: 120px;
+    transition: all ease-in-out 0.3s;
+    transform: translateX(0%);
+}
+
+.mission .mission-cards .mission-card .mission-card-content,
+.mission .mission-cards .mission-card .mission-card-content1 {
+    transform: scale(100%);
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.mission .mission-cards .mission-card .mission-card-content .mission-card-content-moreinfo .money {
+    margin-top: -100px;
+}
+
+.mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-moreinfo .T-shirt {
+    width: 150px; 
+    margin-left: 220px;
+}
+
+.mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-moreinfo .light {
+    margin-top: -150px;
+}
+
+/* Out Mission Hovering */
+.mission .mission-cards .mission-card .mission-card-content:hover,
+.mission .mission-cards .mission-card .mission-card-content1:hover {
+    transform: scale(95%);
+    opacity: 0.9;
+}
+
+.mission .mission-cards .mission-card .mission-card-content:hover .mission-card-content-moreinfo i,
+.mission .mission-cards .mission-card .mission-card-content1:hover .mission-card-content-moreinfo i {
+    rotate: 0deg;
+}
+
+.mission .mission-cards .mission-card .mission-card-content:hover .mission-card-content-moreinfo img,
+.mission .mission-cards .mission-card .mission-card-content1:hover .mission-card-content-moreinfo img {
+    translate: 20%;
+} 
+
+/* Our Mission end */
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    width: 100%;
+    margin-top: 70px;
+    height: 11vh;
+}
+
+.footer h1 {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 27px;
+    padding: 15px 0 0 35px;
+}
+
+.footer h1 span {
+    color: #000000;
+    background-color: #BDFC57;
+    padding: 0 5px 0 5px;
+    margin-right: 2px;
+}
+/* Footer end */
+
+/* Handphone responsive */
+@media (min-width: 320px) and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* navbar */
+    .navbar {
+        height: 9vh;
+    }
+
+    .navbar h1 {
+        font-size: 22px;
+    }
+
+    .navbar .navbar-list {
+        display: block;
+        font-weight: 600;
+        margin-right: 20px;
+        z-index: 999;
+    }
+
+    .navbar.active ul {
+        right: 0;
+    }
+
+    .navbar ul {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: -100%;
+        background-color: #ffffff;
+        height: 1000vh;
+        width: 240px;
+        margin: 0;
+        padding-top: 100px;
+        transition: all ease-in-out 0.5s;
+    }
+
+    .navbar ul li {
+        margin: 0;
+        padding: 15px 0 15px 45px;
+    }
+    /* navbar end */
+
+    /* home */
+    .home {
+        transform: translateY(15%);
+    }
+    .home .home-section {
+        flex-direction: column-reverse;
+    }
+
+    .home .home-section .home-img img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .home .home-section .home-text {
+        width: 100%;
+        height: 230px;
+        margin-top: -5px;
+        margin: 0;
+    }
+
+    .home .home-section .home-text h1 {
+        font-size: 24px;
+        text-align: center;
+        padding: 0;
+        padding-top: 35px;
+    }
+
+    .home .home-section .home-text h1 br {
+        display: none;
+    }
+
+    .home .home-section .home-text .home-line {
+        display: none;
+    }
+
+    .home .home-section .home-text p {
+        text-align: center;
+        font-size: 16px;
+        padding: 10px 17px 0 17px;
+    }
+
+    .home .home-section .home-text p br {
+        display: none;
+    }
+
+    .home .home-section .home-text button {
+        padding: 7px 25px 7px 25px;
+        margin-top: 25px;
+    }
+
+    .home .home-section .home-text button a {
+        font-size: 15px;
+    }
+
+    .home-flex {
+        margin-top: 110px;
+    }
+
+    .home-flex .home-cards {
+        gap: 40px;
+    }
+    /* home end */
+
+    /* design */
+    .desain h1 {
+        font-size: 35px;
+    }
+
+    .desain .desain-cards {
+        height: 60vh;
+    }
+
+    .desain .desain-cards .desain-card-content {
+        transform: scale(80%);
+        margin-top: -30px;
+    }
+    
+    .desain .desain-cards .desain-card-content .desain-card {
+        margin: 10px;
+    }
+    /* design end */
+    
+    /* handphone */
+    .handphone {
+        margin-top: -10px;
+        height: 60vh;
+    }
+
+    .handphone .handphone-mockup .handphone-text {
+        padding: 0;
+        text-align: center;
+    }
+
+    .handphone .handphone-mockup .handphone-text h2 {
+        font-size: 35px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .handphone .handphone-mockup .handphone-text h2 br {
+        display: none;
+    }
+
+    .handphone .handphone-mockup .handphone-text p {
+        font-size: 14px;
+        margin: 15px 20px 0 20px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .handphone .handphone-mockup .handphone-text p br {
+        display: none;
+    }
+
+    .handphone .handphone-mockup .handphone-img img {
+        display: none;
+    }
+
+    .handphone .handphone-mockup .handphone-text button {
+        margin-top: 35px;
+    }
+
+    .handphone-footer {
+        margin-top: 40px;
+        height: 24vh;
+    }
+    /* handphone end */
+
+    /* vision */
+    .vision {
+        margin-top: 250px;
+        align-items: center;
+    }
+
+    .vision .vision-content {
+        width: 300px;
+        height: 440px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .vision .vision-content .vision-text {
+        padding: 0;
+        text-align: center;
+        transform: translateY(-17%);
+    }
+
+    .vision .vision-content .vision-text h1 {
+        font-size: 35px;
+    }
+
+    .vision .vision-content .vision-text p {
+        font-size: 14px;
+        padding: 15px 10px 0 10px;
+    }
+
+    .vision .vision-content .vision-text p br {
+        display: none;
+    }
+
+    .vision .vision-content .vision-img img {
+        position: relative;
+        width: 190px;
+        height: 190px;
+        transform: translateX(0) translateY(0);
+    }
+    /* vision end */
+
+    /* mission */
+    .mission h1 {
+        font-size: 33px;
+        
+    }
+
+    .mission .mission-cards .mission-card .mission-card-content,
+    .mission .mission-cards .mission-card .mission-card-content1 {
+        width: 300px;
+        height: 380px;
+    }
+
+    .mission .mission-cards .mission-card .mission-card-content .mission-card-content-text,
+    .mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-text {
+        margin-top: 25px;
+    }
+
+    .mission .mission-cards .mission-card .mission-card-content .mission-card-content-text h1,
+    .mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-text h1,
+    .mission .mission-cards .mission-card .mission-card-content .mission-card-content-text h2,
+    .mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-text h2,
+    .mission .mission-cards .mission-card .mission-card-content .mission-card-content-text h3,
+    .mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-text h3 {
+        text-align: center;
+        margin: 15px 0 0 0;
+        margin: auto;
+    }
+
+    .mission .mission-cards .mission-card .mission-card-content .mission-card-content-moreinfo,
+    .mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-moreinfo {
+        flex-direction: column-reverse;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mission .mission-cards .mission-card .mission-card-content .mission-card-content-moreinfo img,
+    .mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-moreinfo img {
+        margin-top: 0px;
+        margin-left: 0;
+    }
+
+    .mission .mission-cards .mission-card .mission-card-content .mission-card-content-moreinfo .money {
+        margin-top: 0px;
+    }
+    
+    .mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-moreinfo .T-shirt {
+        margin-left: 0px;
+    }
+    
+    .mission .mission-cards .mission-card .mission-card-content1 .mission-card-content-moreinfo .light {
+        margin-top: 0px;
+    }
+    /* mission end */
+}

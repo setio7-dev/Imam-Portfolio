@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/Product.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Boxicon -->
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Product</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="700">
+        <div class="navbar-logo">
+            <h1><span>Pika</span>Dsg</h1>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">Product</a></li>
+        </ul>
+        <div class="navbar-list">
+            <i class='bx bx-list-ul'></i>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Product home -->
+    <section class="product-home">
+        <div class="product-home-text" data-aos="fade-up" data-aos-duration="1000">
+            <h1>My Product Portofolio</h1>
+            <div class="product-home-line"></div>
+            <p>Some of the services that I sell on Pika. thus resulting in several products like the ones on this page.</p>
+            <a href="#"><button>MORE INFO</button></a>
+        </div>
+        <div class="product-home-img" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
+            <img src="assets/img/product/product_home.jpg" alt="">
+        </div>
+    </section>
+    <!-- Product home end -->
+
+    <!-- Cards -->
+    <section class="cards">
+        <!-- card 1 -->
+        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-img">
+                <div class="card-img-container">
+                    <i class="bx bx-chevron-left" onclick="prevImage()"></i>
+                    <img id="cardImage" src="assets/img/product/t-shirt/card1.png" alt="">
+                    <i class="bx bx-chevron-right" onclick="nextImage()"></i>
+                </div>
+            </div>
+            <div class="card-text">
+                <h1>T-Shirt and Jacket Design</h1>
+                <div class="card-line"></div>
+                <p>Some of the services that I sell on Pika. thus resulting in several products like the ones on this page.</p>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card1 card-reverse" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-img">
+                <div class="card-img-container">
+                    <i class="bx bx-chevron-left" onclick="prevImage1()"></i>
+                    <img id="cardImage1" src="assets/img/product/logo-design/card1.jpg" alt="">
+                    <i class="bx bx-chevron-right" onclick="nextImage1()"></i>
+                </div>
+            </div>
+            <div class="card-text-reverse">
+                <h1>Graphic Design and Logo Design</h1>
+                <div class="card-line"></div>
+                <p>Some of the services that I sell on Pika. thus resulting in several products like the ones on this page.</p>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-img">
+                <div class="card-img-container">
+                    <i class="bx bx-chevron-left" onclick="prevImage2()"></i>
+                    <img id="cardImage2" src="assets/img/product/editing-video/card1.jpg" alt="">
+                    <i class="bx bx-chevron-right" onclick="nextImage2()"></i>
+                </div>
+            </div>
+            <div class="card-text">
+                <h1>Editing Vidio and Cinematic</h1>
+                <div class="card-line"></div>
+                <p>Some of the services that I sell on Pika. thus resulting in several products like the ones on this page.</p>
+            </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card1 card-reverse" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-img">
+                <div class="card-img-container">
+                    <i class="bx bx-chevron-left" onclick="prevImage3()"></i>
+                    <img id="cardImage3" src="assets/img/product/3d-arsitekture/card1.jpg" alt="">
+                    <i class="bx bx-chevron-right" onclick="nextImage3()"></i>
+                </div>
+            </div>
+            <div class="card-text-reverse">
+                <h1>Arsitektural and 3D Modelling</h1>
+                <div class="card-line"></div>
+                <p>Some of the services that I sell on Pika. thus resulting in several products like the ones on this page.</p>
+            </div>
+        </div>
+        <!-- card 5 -->
+        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card-img">
+                <div class="card-img-container">
+                    <i class="bx bx-chevron-left" onclick="prevImage4()"></i>
+                    <img id="cardImage4" src="assets/img/product/editing-photo/card1.png" alt="">
+                    <i class="bx bx-chevron-right" onclick="nextImage4()"></i>
+                </div>
+            </div>
+            <div class="card-text">
+                <h1>Editing Photo and Luts</h1>
+                <div class="card-line"></div>
+                <p>Some of the services that I sell on Pika. thus resulting in several products like the ones on this page.</p>
+            </div>
+        </div>
+    </section>
+    <!-- cards end -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h1><span>Pika</span>Dsg</h1>
+    </footer>
+    <!-- footer end -->
+    
+    <!-- Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
